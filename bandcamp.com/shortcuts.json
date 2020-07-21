@@ -1,0 +1,29 @@
+[
+  {
+    "key": "MediaPlayPause",
+    "inputEvents": [
+      {
+        "type": "keyDown",
+        "keyCode": "Space"
+      }
+    ]
+  },
+  {
+    "key": "MediaPreviousTrack",
+    "inputEvents": [
+      {
+        "type": "keyDown",
+        "keyCode": "Left"
+      }
+    ]
+  },
+  {
+    "key": "MediaNextTrack",
+    "inputEvents": [
+      {
+        "type": "keyDown",
+        "keyCode": "Right"
+      }
+    ]
+  }
+]

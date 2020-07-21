@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+# shellcheck source=../libs/helpers.sh
+source "$(dirname "$0")/../libs/helpers.sh"
+
+name="Bandcamp"
+url="https://bandcamp.com"
+
+force_single_instance
+# shellcheck disable=SC2119
+inject
+# shellcheck disable=SC2119
+set_global_shortcuts
+
+add_option "--internal-urls '.*?'" # all urls are internals
+
+nativefy $name $url
+
+create_desktop_file $name "Music;Player" "Music"
+install_desktop_file $name
