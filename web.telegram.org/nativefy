@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+# shellcheck source=../libs/helpers.sh
+source "$(dirname "$0")/../libs/helpers.sh"
+
+name="Telegram"
+url="https://web.telegram.org"
+
+nativefy $name $url
+
+create_desktop_file $name "Chat;Internet" "Network"
+install_desktop_file $name
